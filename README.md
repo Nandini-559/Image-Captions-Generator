@@ -1,3 +1,78 @@
+# **Image Captions and Hashtags Generation Using Deep Learning**
+
+This project demonstrates a deep learning approach to automatically generate captions and hashtags for images using a combination of Convolutional Neural Networks (CNN) and Recurrent Neural Networks (RNN). The model is designed for applications such as social media, where captions and hashtags enhance content engagement.
+
+## **Abstract**
+Social media posts with captions and hashtags garner more attention. This project automates the generation of captions and hashtags for images using:
+- **CNN (VGG19)** for extracting high-level visual features.
+- **RNN (LSTM)** for generating captions from extracted features.
+
+The model is trained on the Flickr8k dataset and generates text descriptions and hashtags for input images.
+
+---
+
+## **Features**
+- **Caption Generation**: Converts images into coherent textual descriptions.
+- **Hashtag Generation**: Extracts keywords from captions for hashtags.
+- **Customizable**: Easily extendable for different datasets and domains.
+- **User-Friendly Interface (Future Work)**: Plans to add a UI for uploading images and receiving captions/hashtags.
+
+---
+
+## **Project Architecture**
+### 1. **CNN (VGG19) for Image Features**
+- Extracts high-level visual features like textures, edges, and shapes.
+- Outputs feature vectors used as input to the RNN.
+
+### 2. **RNN (LSTM) for Caption Generation**
+- Combines visual features with word embeddings.
+- Generates captions word by word based on context.
+
+**Flowchart**:  
+![Flowchart](link-to-flowchart-image)
+
+**CNN Architecture**:  
+![CNN Architecture](link-to-cnn-architecture-image)
+
+---
+
+## **Dataset**
+- **Name**: [Flickr8k Dataset](https://www.kaggle.com/datasets/adityajn105/flickr8k)
+- **Content**: 8,000 images with five captions each.
+
+---
+
+## **Setup and Usage**
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/Nandini-559/Image-Captions-Generator.git
+   cd Image-Captions-Generator
+   ```
+
+2. Prepare the dataset:
+   - Download the [Flickr8k Dataset](https://www.kaggle.com/datasets/adityajn105/flickr8k) and place it in the `Dataset` folder.
+
+3. Train the model:
+   ```bash
+   python image_caption_generator.py
+   ```
+
+4. Generate captions for new images:
+   ```bash
+   python captions_generation.py --image <path_to_image>
+   ```
+
+---
+
+## **Results**
+The model achieved an accuracy of **97.77%**.
+
+### Example 1:
+**Input Image and Generated Caption**:  
+![Sample Image](https://github.com/Nandini-559/Image-Captions-Generator/blob/master/result.png)
+
+---
+
 ## Required Files
 
 This project relies on the following files that are not included in the repository due to size constraints:
