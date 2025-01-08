@@ -13,9 +13,8 @@ The model is trained on the Flickr8k dataset and generates text descriptions and
 
 ## **Features**
 - **Caption Generation**: Converts images into coherent textual descriptions.
-- **Hashtag Generation**: Extracts keywords from captions for hashtags.
 - **Customizable**: Easily extendable for different datasets and domains.
-- **User-Friendly Interface (Future Work)**: Plans to add a UI for uploading images and receiving captions/hashtags.
+- **User-Friendly Interface**: UI for uploading images and receiving captions.
 
 ---
 
@@ -27,12 +26,6 @@ The model is trained on the Flickr8k dataset and generates text descriptions and
 ### 2. **RNN (LSTM) for Caption Generation**
 - Combines visual features with word embeddings.
 - Generates captions word by word based on context.
-
-**Flowchart**:  
-![Flowchart](link-to-flowchart-image)
-
-**CNN Architecture**:  
-![CNN Architecture](link-to-cnn-architecture-image)
 
 ---
 
